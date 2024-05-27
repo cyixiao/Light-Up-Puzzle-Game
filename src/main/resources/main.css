@@ -1,0 +1,189 @@
+/**
+ * Write CSS code in this file to style your JavaFX user interface
+ *
+ * Note: You must link this file to your scene object by adding the following line of code to the
+ * JavaFX start() method:
+ *   scene.getStylesheets().add("main.css");
+ */
+.label-light-up {
+    -fx-background-color: black;
+    -fx-text-fill: #FFFD9B;
+    -fx-font-size: 28px;
+    -fx-font-family: 'Arial';
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-pref-width: 500px;
+    -fx-alignment: center;
+}
+
+.solving-message {
+    -fx-background-color: #1C84C9;
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Times New Roman';
+    -fx-padding: 10px;
+    -fx-border-radius: 3px;
+    -fx-pref-width: 500px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.success-message {
+    -fx-background-color: #90EE90;
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Times New Roman';
+    -fx-padding: 10px;
+    -fx-border-radius: 3px;
+    -fx-pref-width: 500px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.total-num-str, .active-index-str {
+    -fx-background-color: #ADD8E6;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Tahoma';
+    -fx-pref-width: 150px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483D8B;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.total-num, .active-index {
+    -fx-background-color: #ADD8E6;
+    -fx-font-size: 16px;
+    -fx-text-fill: #2E8B57;
+    -fx-pref-width: 100px;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.change-puzzle-text {
+    -fx-background-color: #ADD8E6;
+    -fx-alignment: center;
+    -fx-font-size: 16px;
+    -fx-font-family: 'Tahoma';
+    -fx-pref-width: 150px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483D8B;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.change-puzzle-button-arrows {
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Tahoma';
+    -fx-pref-width: 100px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483D8B;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.change-puzzle-button-random {
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Tahoma';
+    -fx-pref-width: 150px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483D8B;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.reset-puzzle-button {
+    -fx-alignment: center;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Tahoma';
+    -fx-pref-width: 200px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #483D8B;
+    -fx-padding: 6px;
+    -fx-border-radius: 3px;
+}
+
+.reset-puzzle-pane {
+    -fx-pref-width: 500px;
+    -fx-background-color: #ADD8E6;
+}
+
+.puzzle-grid {
+    -fx-pref-width: 500px;
+    -fx-pref-height: 500px;
+    -fx-background-color: black;
+}
+
+.wall-cell {
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-color: black;
+    -fx-text-fill: black;
+}
+
+.lamp-cell-button {
+    -fx-background-color: #FFFD9B;
+    -fx-background-image: url('light-bulb.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+}
+
+.illegal-lamp-cell-button {
+    -fx-background-color: #DF6F5E;
+    -fx-background-image: url('light-bulb.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+}
+
+.lit-cell-button {
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-color: #FFFD9B;
+}
+
+.empty-cell-button {
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-color: white;
+}
+
+.clue-satisfied {
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-color: #303841;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-family: 'Arial';
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.clue-not-satisfied {
+    -fx-pref-width: 70px;
+    -fx-pref-height: 70px;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-family: 'Arial';
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.index-notification {
+    -fx-background-color: #EF3D26;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: bold;
+    -fx-padding: 3px;
+    -fx-pref-width: 500px;
+    -fx-alignment: center;
+}
